@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生活不只是柴米油盐，还有诗和远方]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://lvshuang.github.io/"/>
-  <updated>2015-12-04T03:34:13.000Z</updated>
+  <updated>2015-12-04T10:11:21.000Z</updated>
   <id>http://lvshuang.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://lvshuang.github.io/2015/12/04/%E4%B8%A4%E5%BC%A0%E8%A5%BF%E6%98%8C%E7%9A%84%E7%85%A7%E7%89%87/"/>
     <id>http://lvshuang.github.io/2015/12/04/两张西昌的照片/</id>
     <published>2015-12-04T03:28:27.000Z</published>
-    <updated>2015-12-04T03:34:13.000Z</updated>
+    <updated>2015-12-04T10:11:21.000Z</updated>
     <content type="html"><![CDATA[<p>9月去了躺西昌，留下了一些照片。对西昌的印象一直都是蓝天白云，有点类似云南的天气，就是太阳太毒辣 @_@!!</p>
 <h3 id="一辆单车">一辆单车</h3><img src="http://7xow2e.com1.z0.glb.clouddn.com/blogDSC06854.jpg" title="一辆单车">
 <h3 id="芦苇荡">芦苇荡</h3><img src="http://7xow2e.com1.z0.glb.clouddn.com/blogDSC06865.jpg" title="一辆单车">
@@ -31,7 +31,7 @@
     
       <category term="西昌 摄影 生活" scheme="http://lvshuang.github.io/tags/%E8%A5%BF%E6%98%8C-%E6%91%84%E5%BD%B1-%E7%94%9F%E6%B4%BB/"/>
     
-      <category term="生活 摄影" scheme="http://lvshuang.github.io/categories/%E7%94%9F%E6%B4%BB-%E6%91%84%E5%BD%B1/"/>
+      <category term="摄影" scheme="http://lvshuang.github.io/categories/%E6%91%84%E5%BD%B1/"/>
     
   </entry>
   
@@ -40,7 +40,7 @@
     <link href="http://lvshuang.github.io/2015/12/03/PHP%E8%BF%9B%E7%A8%8B-PHP%E5%88%9B%E5%BB%BA%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/"/>
     <id>http://lvshuang.github.io/2015/12/03/PHP进程-PHP创建守护进程/</id>
     <published>2015-12-03T15:14:45.000Z</published>
-    <updated>2015-12-04T02:01:29.000Z</updated>
+    <updated>2015-12-04T10:11:35.000Z</updated>
     <content type="html"><![CDATA[<p>随着互联网的发展，以及PHP快速开发的特点，现在越来越来越多的团队将PHP作为服务端的编程语言。今天PHP7发布，PHP7效率大幅提升，相信后面会有更多的团队使用PHP作为后端服务开发的首选语言。</p>
 <p>PHP是单线程的，但是使用PCNTL和POSIX等扩展能实现多进程编程，相比于多线程编程，多进程编程要相对容易很多。在使用PHP开发服务端时，很多时候避免不了和多进程打交道，想着边学边写几篇关于PHP服务端开发的系列博客。个人才疏学浅，有疏漏，还请各位看官指正。</p>
 <p>今天我们就从PHP创建守护进程开始说起。</p>
@@ -70,9 +70,9 @@
 <p>PHP是单线程的，但是使用PCNTL和POSIX等扩展能实现多]]>
     </summary>
     
-      <category term="PHP PHP进程" scheme="http://lvshuang.github.io/tags/PHP-PHP%E8%BF%9B%E7%A8%8B/"/>
+      <category term="php php进程" scheme="http://lvshuang.github.io/tags/php-php%E8%BF%9B%E7%A8%8B/"/>
     
-      <category term="php 技术" scheme="http://lvshuang.github.io/categories/php-%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://lvshuang.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
