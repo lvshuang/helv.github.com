@@ -71,7 +71,7 @@
     <link href="http://lvshuang.github.io/2015/12/03/PHP%E8%BF%9B%E7%A8%8B-PHP%E5%88%9B%E5%BB%BA%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/"/>
     <id>http://lvshuang.github.io/2015/12/03/PHP进程-PHP创建守护进程/</id>
     <published>2015-12-03T15:14:45.000Z</published>
-    <updated>2015-12-07T10:32:44.000Z</updated>
+    <updated>2015-12-07T10:56:23.000Z</updated>
     <content type="html"><![CDATA[<p>随着互联网的发展，以及PHP快速开发的特点，现在越来越来越多的团队将PHP作为服务端的编程语言。今天PHP7发布，PHP7效率大幅提升，相信后面会有更多的团队使用PHP作为后端服务开发的首选语言。</p>
 <p>PHP是单线程的，但是使用PCNTL和POSIX等扩展能实现多进程编程，相比于多线程编程，多进程编程要相对容易很多。在使用PHP开发服务端时，很多时候避免不了和多进程打交道，想着边学边写几篇关于PHP服务端开发的系列博客。个人才疏学浅，有疏漏，还请各位看官指正。</p>
 <p>今天我们就从PHP创建守护进程开始说起。</p>
@@ -143,7 +143,7 @@
     <link href="http://lvshuang.github.io/2013/04/12/%E5%AF%B9%E5%A4%9A%E6%80%81%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%88%E5%9F%BA%E4%BA%8EPHP%EF%BC%89/"/>
     <id>http://lvshuang.github.io/2013/04/12/对多态的理解（基于PHP）/</id>
     <published>2013-04-11T16:53:00.000Z</published>
-    <updated>2015-12-07T10:31:52.000Z</updated>
+    <updated>2015-12-07T10:31:51.000Z</updated>
     <content type="html"><![CDATA[<p>代码中经常遇到多个if else的情况 ，以前对多态理解只限于了解，并没有真正使用过。今天听老大讲了下，把自己的理解帖出来，一下代码均基于PHP实现，不态了解java的多态机制。</p>
 <p>首先，我们以订单作为一个例子，操作一个订单的时候，基本上都要基于订单状态，做出相应操作。我们假设一个订单有一下几种状态：1,created（创建状态，等待工作人员审核），2,authed(审核通过，等待发货)，3,shipped（已发货状态），4,completed(完成状态)。</p>
 <p>当用户提交订单后，对订单的操作就有取消，审核，发货，完成等几个操作。假设要对订单进行取消操作，订单状态必须是created和authed状态。要对订单进行审核，订单状态必须是created，要发货，订单状态必须authed，要执行完成操作，订单必须是shipped状态, completed状态的订单，不能执行任何操作。</p>
