@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生活不只是柴米油盐，还有诗和远方]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://lvshuang.github.io/"/>
-  <updated>2015-12-07T10:32:21.000Z</updated>
+  <updated>2015-12-07T10:59:52.000Z</updated>
   <id>http://lvshuang.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://lvshuang.github.io/2015/12/06/%E6%99%A8%E8%B7%91%E6%97%B6%E6%89%8B%E6%9C%BA%E6%8B%8D%E4%BA%86%E4%B8%A4%E5%BC%A0/"/>
     <id>http://lvshuang.github.io/2015/12/06/晨跑时手机拍了两张/</id>
     <published>2015-12-06T03:21:25.000Z</published>
-    <updated>2015-12-07T10:32:21.000Z</updated>
+    <updated>2015-12-07T10:59:52.000Z</updated>
     <content type="html"><![CDATA[<p>天气不错，在渝北果塘湖跑了会，随手拍了两张湖边的房子。希望老的时候，也能找个有山有水的地方，安详一生。</p>
 <img src="http://7xow2e.com1.z0.glb.clouddn.com/blogIMG_0872.jpg">
 <img src="http://7xow2e.com1.z0.glb.clouddn.com/blogIMG_0869.jpg">]]></content>
@@ -46,7 +46,7 @@
     <link href="http://lvshuang.github.io/2015/12/04/%E4%B8%A4%E5%BC%A0%E8%A5%BF%E6%98%8C%E7%9A%84%E7%85%A7%E7%89%87/"/>
     <id>http://lvshuang.github.io/2015/12/04/两张西昌的照片/</id>
     <published>2015-12-04T03:28:27.000Z</published>
-    <updated>2015-12-07T10:31:02.000Z</updated>
+    <updated>2015-12-07T10:59:55.000Z</updated>
     <content type="html"><![CDATA[<p>9月去了躺西昌，留下了一些照片。对西昌的印象一直都是蓝天白云，有点类似云南的天气，就是太阳太毒辣 @_@!!</p>
 <h3 id="一辆单车">一辆单车</h3><img src="http://7xow2e.com1.z0.glb.clouddn.com/blogDSC06854.jpg" title="一辆单车">
 <h3 id="芦苇荡">芦苇荡</h3><img src="http://7xow2e.com1.z0.glb.clouddn.com/blogDSC06865.jpg" title="一辆单车">
@@ -143,7 +143,7 @@
     <link href="http://lvshuang.github.io/2013/04/12/%E5%AF%B9%E5%A4%9A%E6%80%81%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%88%E5%9F%BA%E4%BA%8EPHP%EF%BC%89/"/>
     <id>http://lvshuang.github.io/2013/04/12/对多态的理解（基于PHP）/</id>
     <published>2013-04-11T16:53:00.000Z</published>
-    <updated>2015-12-07T10:31:51.000Z</updated>
+    <updated>2015-12-07T10:59:56.000Z</updated>
     <content type="html"><![CDATA[<p>代码中经常遇到多个if else的情况 ，以前对多态理解只限于了解，并没有真正使用过。今天听老大讲了下，把自己的理解帖出来，一下代码均基于PHP实现，不态了解java的多态机制。</p>
 <p>首先，我们以订单作为一个例子，操作一个订单的时候，基本上都要基于订单状态，做出相应操作。我们假设一个订单有一下几种状态：1,created（创建状态，等待工作人员审核），2,authed(审核通过，等待发货)，3,shipped（已发货状态），4,completed(完成状态)。</p>
 <p>当用户提交订单后，对订单的操作就有取消，审核，发货，完成等几个操作。假设要对订单进行取消操作，订单状态必须是created和authed状态。要对订单进行审核，订单状态必须是created，要发货，订单状态必须authed，要执行完成操作，订单必须是shipped状态, completed状态的订单，不能执行任何操作。</p>
