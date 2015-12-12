@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生活不只是柴米油盐，还有诗和远方]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://lvshuang.github.io/"/>
-  <updated>2015-12-12T13:11:17.000Z</updated>
+  <updated>2015-12-12T17:08:57.000Z</updated>
   <id>http://lvshuang.github.io/</id>
   
   <author>
@@ -19,15 +19,15 @@
     <link href="http://lvshuang.github.io/2015/12/10/PHP%E8%BF%9B%E7%A8%8B-PHP%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"/>
     <id>http://lvshuang.github.io/2015/12/10/PHP进程-PHP进程间通信/</id>
     <published>2015-12-10T15:12:03.000Z</published>
-    <updated>2015-12-12T13:11:17.000Z</updated>
-    <content type="html"><![CDATA[<p>在使用多进程编程时，避免不了对资源的竞争。比如同时去更新数据库中的一条记录当中的amount(金额)字段，假设原始的值为0.00，此时进程A要把amount的值加100.00，而进程B要将amount的值加50.00，经过两次相加后，我们预期的amount值为150.00。假设进程同时去操作，他们读到的amount都是0.00， 进程A 加100.00后为100.00，进程B加50.00后得到的是50.00，再假设进程A先把数据更新到数据库，此时数据库库中的amount是100.00，而后，进程B在更新记录，数据库中的amount会从100.00更新为50.00，这样就会造成和预期不一致的结果。</p>
+    <updated>2015-12-12T17:08:57.000Z</updated>
+    <content type="html"><![CDATA[<p>在使用多进程编程时，避免不了对资源的竞争。比如同时去更新数据库中的一条记录当中的amount(金额)字段，假设原始的值为0.00，此时进程A要把amount的值加100.00，而进程B要将amount的值加50.00，经过两次相加后，我们预期的amount值为150.00。<br>假设进程同时去操作，他们读到的amount都是0.00， 进程A 加100.00后为100.00，进程B加50.00后得到的是50.00，再假设进程A先把数据更新到数据库，此时数据库库中的amount是100.00，而后，进程B在更新记录，数据库中的amount会从100.00更新为50.00，这样就会造成和预期不一致的结果。</p>
 <p>为了解决这个问题，我们需要有两种方式：</p>
 <ul>
 <li>使用锁</li>
 <li>保证其中一个先执行，一个后执行</li>
 </ul>
 <p>使用锁的方式叫进程互斥，保证其中一个先执行就是让后执行的进程等待，先执行的进程执行完成后告诉等待的进程可以执行了，这个就叫进程间同步，这两种方式都可以认为是进程间的通信。</p>
-<p>在unix家族中，进程间通信有管道、信号、消息队列和共享内存等几大类。PHP共享内存相比其他几类通信方式实现起来比较简单，我们就来看下PHP的共享内存。</p>
+<p>在unix家族中，进程间通信有管道、信号、消息队列和共享内存等几大类。</p>
 <h3 id="首先，我们使用php实现一个进程间的互斥锁。">首先，我们使用php实现一个进程间的互斥锁。</h3><p>php有一个 sem_*系列的函数，可以实现进程锁，sem_*系列函数实际操作的是 system V 信号，通过信号实现进程间的互斥锁。</p>
 <h4 id="获取一个信号资源">获取一个信号资源</h4><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">resource sem_get ( int <span class="variable">$key</span> [, int <span class="variable">$max</span>_acquire = <span class="number">1</span> [, int <span class="variable">$perm</span> = <span class="number">0666</span> [, int <span class="variable">$auto</span>_release = <span class="number">1</span> ]]] )</span><br></pre></td></tr></table></figure>
 <p>参数说明：</p>
