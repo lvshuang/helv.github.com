@@ -15,7 +15,7 @@
 <li>perm 权限 使用默认值</li>
 <li>是否自动释放资源，使用默认值</li>
 </ul>
-<p>如果使用同一个key, 多次调用seg_get, 会返回不同的值, 但是返回的所有的值都只想同一个信号资源</p>
+<p>如果使用同一个key, 多次调用seg_get, 会返回不同的值, 但是返回的所有的值都指向同一个信号资源</p>
 <h4 id="使进程占据信号">使进程占据信号</h4><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bool sem_acquire ( resource <span class="variable">$sem</span>_identifier [, bool <span class="variable">$nowait</span> = <span class="literal">false</span> ] )</span><br></pre></td></tr></table></figure>
 <p>参数说明：</p>
 <ul>
@@ -40,7 +40,7 @@
 <p>参数说明：</p>
 <ul>
 <li>key 任意正整数 共享内存块的id</li>
-<li>memsize 正整数 共享内存块的大小 但是byte，如果不提供此参数，则检查php.ini中的配置项sysvshm.init_mem是否存在，存在使用配置的值，不存在则默认10000 bytes</li>
+<li>memsize 正整数 共享内存块的大小 单位是byte，如果不提供此参数，则检查php.ini中的配置项sysvshm.init_mem是否存在，存在使用配置的值，不存在则默认10000 bytes</li>
 <li>perm 权限 使用默认值</li>
 </ul>
 <p>函数返回一个共享内存块的资源标识</p>
